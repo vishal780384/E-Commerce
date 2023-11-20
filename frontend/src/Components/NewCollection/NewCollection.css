@@ -1,0 +1,76 @@
+
+.new-collection {
+    width: 84%;
+    background-color: #e8e3e3;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 130px;
+    border-radius: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    margin-top: 60px;
+  }
+  
+  .new-collection h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #1d1c1c;
+    margin: 0;
+    font-family:poppins;
+  }
+  
+  .new-collection hr {
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  .collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+
+  }
+  
+  /* Styling for individual items (you can customize these further) */
+  .item {
+    width: 250px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .item h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .item .price {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .item .old-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .item .new-price {
+    color: #e74c3c;
+    font-weight: 600;
+  }
+  

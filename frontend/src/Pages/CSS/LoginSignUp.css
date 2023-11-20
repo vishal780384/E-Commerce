@@ -1,0 +1,99 @@
+
+.loginsignup {
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+  background-color: #fce3fc;
+
+  text-align: center;
+}
+
+.loginsignup-container {
+  width: 580px;
+  height: 520px;
+  background: #fff;
+  margin: auto;
+  padding: 15px 50px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0px;
+}
+
+.loginsignup-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin: 30px;
+}
+
+.loginsignup-fields input{
+    height: 45px;
+    width: 90%;
+    padding-left: 20px;
+    border: 1px solid #121212;
+    outline: none;
+    color: #2d2c2c;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.loginsignup-container button {
+  width: 250px;
+  height: 45px;
+  color: #fff;
+  background-color: rgb(174, 12, 12);
+  margin-top: 30px;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0;
+}
+ .loginsignup-container button:hover{
+    color: #eae3e3;
+    background: #5c5c5c;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-size: 19px;
+    margin: auto;
+}
+
+.loginsignup-login {
+  margin-top: 20px;
+  font-size:15px ;
+  font-weight: 500;
+}
+
+.loginsignup-login span {
+    display: block;
+    color: rgb(219, 17, 17);
+    font-weight: 600;
+    margin: 0;
+}
+.loginsignup-login u{
+   color: red;
+   font-size: 16px;
+}
+
+.loginsignup-login span:hover{
+    color: #b45353;
+    font-size: 17px;
+}
+
+.loginsignup-agree {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;  
+  margin-right: 15px;
+}
+
+/* You can add more styles or customize the existing ones as per your requirements. */

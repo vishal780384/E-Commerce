@@ -1,0 +1,149 @@
+.navbar {
+    background-color: #716e71;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-logo p{
+     font-size: 30px;
+     font-weight: 800;
+     margin: 0;
+  }
+  
+  .nav-logo img {
+    width: 50px; /* Adjust the width as needed */
+    margin-right:10px;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+  .nav-menu li :hover{
+     color: #cdc8cd;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-menu li hr {
+    border: none;
+    border-top: 2px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  
+  .nav-login-cart button {
+    background: none;
+    color: rgb(243, 239, 239);
+    border:1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 900;
+    justify-content: space-between;
+  }
+  .nav-login-cart button:hover{
+      color: #333;
+      background: white;
+      transition: 300ms;
+  }
+  .nav-login-cart {
+     justify-content: space-between;
+     margin-right: 22px;
+  }
+
+  .nav-login-cart img {
+    margin: auto;
+    margin-top: 5px;
+    width: 30px; /* Adjust the width as needed */
+    height: 32px;
+  }
+  
+  .nav-cart-count {
+    background-color: #981616; /* Adjust the background color as needed */
+    color: white;
+    border-radius: 60%;
+    padding: 5px 6px;
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .menu-icon.open .bar {
+    transform: rotate(-45deg);
+    transition: transform 0.4s;
+  }
+  
+  .menu-icon .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin: 2px auto;
+    transition: transform 0.4s;
+  }
+  
+  /* Media query for responsive design */
+  @media screen and (max-width: 600px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  
+    .nav-menu.mobile {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  
+    .nav-login-cart {
+      display: none;
+    }
+  
+    .nav-cart-count {
+      top: -5px;
+      right: -5px;
+    }
+  }
+  
