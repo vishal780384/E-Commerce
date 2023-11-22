@@ -22,7 +22,7 @@ const ProductDisplay = (props) => {
              </div>
             <div className="productdisplay-right">
                    <h1>{product.name}</h1>
-                   <div className="productdisplay-right-star">
+                   <div className="productdisplay-right-stars">
                         <img src={star_icon} alt="" />
                         <img src={star_icon} alt="" />
                         <img src={star_icon} alt="" />
@@ -30,14 +30,17 @@ const ProductDisplay = (props) => {
                         <img src={star_dull_icon} alt="" />
                         <p>(122)</p>
                 </div>
-                   <div className="productdisplay-right-price">
+                   <div className="productdisplay-right-prices">
                    <div className="productdisplay-right-price-old">${product.old_price} </div>
                    <div className="productdisplay-right-price-new">${product.new_price} </div>
              </div>
               <div className='productdisplay-right-description'>
-              It should not only describe the t-shirt. Rather, it should tell a compelling story about why the t-shirt is worth buying. 
-              As with stories, your t-shirt product description must have an attention hook, a climax, and an impact. Besides, 
-              it should not only amuse but also empower the customers to make informed decisions.
+                 <p>
+                  It should not only describe the t-shirt. Rather, it should tell a compelling story about <br/> 
+                  why the t-shirt is worth buying.As with stories, your t-shirt product description must <br/>
+                  have an attention hook, a climax, and an impact. Besides, it should not only amuse but <br/>
+                  also empower the customers to make informed decisions.
+                 </p>
             </div> 
             <div className="productdisplay-right-size">
                 <h1>Select Size</h1>
@@ -51,8 +54,8 @@ const ProductDisplay = (props) => {
             </div>
 
               <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-              <p className='productdisplay-right-category'> <span>Category:</span>Women , T-Shirt, Crop Top </p>
-              <p className='productdisplay-right-category'> <span>Tags:</span>Modern, Latest </p>
+              <p className='productdisplay-right-category'> <span>Category : </span>Women , T-Shirt, Crop Top </p>
+              <p className='productdisplay-right-category'> <span>Tags : </span>Modern, Latest </p>
 
             </div>
         </div>

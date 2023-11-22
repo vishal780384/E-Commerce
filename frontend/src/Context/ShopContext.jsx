@@ -1,6 +1,8 @@
 import React,{ createContext, useState } from "react";
 import all_product from "../Components/Assests/all_product";  // .js file 
 // import CartItems from "../Components/CartItems/CartItems";
+
+
 export const ShopContext = createContext(null);
 
 const getDefaultCart=()=>{
@@ -12,21 +14,22 @@ const getDefaultCart=()=>{
 }
 
 const ShopContextProvider=(props)=>{
-    const [CartItems,setCartItems] = useState(getDefaultCart());
+    const [cartItems,setCartItems] = useState(getDefaultCart());  // CartItem C-c .
     
     const addTocart=(itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
     }
-    const removeTocart=(itemId)=>{
+    const removeFromcart=(itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
     }
 
+    
     const getTotalCartAmount=()=>{
          let totalAmount=0;
-         for(const item in CartItems){
-            if(CartItems[item]>0){
+         for(const item in cartItems){
+            if(cartItems[item]>0){
                 let itemInfo=all_product.find((product)=>product.id===Number(item));
-                totalAmount+=itemInfo.new_price * CartItems[item];
+                totalAmount+=itemInfo.new_price * cartItems[item];
             }
             return totalAmount;
          }
@@ -34,15 +37,15 @@ const ShopContextProvider=(props)=>{
 
     const getTotalCartItems=()=>{
          let totalItem=0;
-         for(const item in CartItems){
-             if(CartItems[item]>0){
-                totalItem+=CartItems[item];
+         for(const item in cartItems){
+             if(cartItems[item]>0){
+                totalItem+=cartItems[item];
              }
          }
          return totalItem;
     }
     
-    const contextValue = {getTotalCartItems,getTotalCartAmount,all_product,CartItems,addTocart,removeTocart};
+    const contextValue = {getTotalCartItems,getTotalCartAmount,all_product,cartItems,addTocart,removeFromcart};
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}

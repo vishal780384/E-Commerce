@@ -5,7 +5,7 @@ import { ShopContext } from '../../Context/ShopContext'
 
 
 const CartItems = () => {
-    const {getTotalCartAmount,all_product, CartItems, removeItem } = useContext(ShopContext);
+    const {getTotalCartAmount,all_product, cartItems, removeFromCart } = useContext(ShopContext);  // removeItem - removeFromCart
     return (
         <div className='cartitems'>
             <div className="cartitems-format-main">
@@ -17,16 +17,17 @@ const CartItems = () => {
                 <p>Remove</p>
             </div>
             <hr />
+
             {all_product.map((e) => {
-                if (CartItems[e.id] > 0) {
+                if (cartItems[e.id] > 0) {       // C-c 
                     return <div>
                         <div className="cartitem-format cartitems-format-main">
                             <img src={e.image} alt="" className='carticon-product-icon' />
                             <p>{e.name}</p>
                             <p>${e.new_price}</p>
-                            <button className='cartitems-quantity'> {CartItems[e.id]} </button>
-                            <p>${e.new_price * CartItems[e.id]}</p>
-                            <img className='cartitems-remove-icon' src={remove_icon} onClick={() => { removeItem(e.id) }} alt="" />
+                            <button className='cartitems-quantity'> {cartItems[e.id]} </button>
+                            <p>${e.new_price * cartItems[e.id]}</p>
+                            <img className='cartitems-remove-icon' src={remove_icon} onClick={() => { removeFromCart(e.id) }} alt="" />
                         </div>
                         <hr />
                     </div>

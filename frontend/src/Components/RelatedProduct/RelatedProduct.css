@@ -1,6 +1,6 @@
 .relatedproducts{
-    display: flex;
     flex-direction: column;
+    display: flex;
     align-items: center;
     gap: 10px;
     height: 90vh;
@@ -19,8 +19,9 @@
     background: #252525;
 }
 
-.relatedproducts-item{
+.relatedproduct-item{
     margin-top: 50px;
     display: flex;
     gap: 30px;
+    align-items: center;
 }

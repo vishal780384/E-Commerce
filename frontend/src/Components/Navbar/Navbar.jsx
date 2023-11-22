@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className={`navbar ${mobileMenuOpen ? 'responsive' : ''}`}>
       <div className='nav-logo'>
         <img src={logo} alt="" />
-        <p>SHOPPER</p>
+        <p>Aashion</p>
       </div>
       <ul className={`nav-menu ${mobileMenuOpen ? 'mobile' : ''}`}>
         <li onClick={() => { setMenu("shop"); if (mobileMenuOpen) toggleMobileMenu(); }}>
