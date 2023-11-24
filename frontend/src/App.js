@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product'
-import LoginSignUp from './Pages/LoginSignUP'
+import SignUp from './Pages/SignUP'
 import Cart from './Pages/Cart'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -11,6 +11,7 @@ import men_banner from './Components/Assests/banner_mens.png';
 import women_banner from './Components/Assests/banner_women.png';
 import kid_banner from './Components/Assests/banner_kids.png';
 import Footer from './Components/Footer/Footer';
+import LogIn from './Pages/Login';
 
 
 function App() {
@@ -29,7 +30,9 @@ function App() {
            
             </Route>
             <Route path='/cart' element={<Cart />} />
-            <Route path='/login' element={<LoginSignUp />} />
+            <Route path='/login' element={<LogIn />} />
+            <Route path='/register' element={<SignUp />} />
+
             </Routes>
             
         </BrowserRouter>

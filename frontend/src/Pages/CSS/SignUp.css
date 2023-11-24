@@ -3,22 +3,21 @@
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  background-color: #fce3fc;
-
+  background-color:#d0d8da;
   text-align: center;
 }
 
 .loginsignup-container {
-  width: 580px;
-  height: 520px;
+  width: 560px;
+  height: 590px;
   background: #fff;
   margin: auto;
   padding: 15px 50px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 35px;
   margin: 20px 0px;
 }
 
@@ -36,31 +35,31 @@ h1 {
     border: 1px solid #121212;
     outline: none;
     color: #2d2c2c;
-    border-radius: 12px;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: 600;
     margin: 0;
 }
 
 .loginsignup-container button {
-  width: 250px;
+  width: 230px;
   height: 45px;
   color: #fff;
   background-color: rgb(174, 12, 12);
-  margin-top: 30px;
+  margin-top: 40px;
   border: none;
   font-size: 20px;
   font-weight: 800;
   border-radius: 10px;
   cursor: pointer;
   margin: 0;
+  margin-top: 10px;
 }
  .loginsignup-container button:hover{
     color: #eae3e3;
     background: #5c5c5c;
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     font-size: 19px;
-    margin: auto;
 }
 
 .loginsignup-login {
@@ -83,12 +82,12 @@ h1 {
 .loginsignup-login span:hover{
     color: #b45353;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .loginsignup-agree {
   display: flex;
   align-items: center;
-  margin: 0;
 }
 
 input[type="checkbox"] {
